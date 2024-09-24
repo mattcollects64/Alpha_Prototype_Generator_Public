@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.input-section {
+    width: 80%;
+    max-width: 4.5in;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin-bottom: 20px;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.input-header{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.input-field label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.input-field input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 60%;
+}
+
+.card {
+    width: 80%;
+    max-width: 4.5in;
+    height: 7in;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;  Remove this */
+    padding: 16px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between; /* Space between left and right groups */
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.left-info {
+    display: flex;
+    align-items: center; /* Vertically center name and level */
+}
+
+.name {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.level {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.right-info {
+    display: flex;
+    align-items: center; /* Vertically center hp and dot */
+}
+
+.hp {
+    font-size: 1rem;
+    margin-right: 10px; /* Add space between HP and type */
+}
+
+.type {
+    margin-left: auto;
+}
+
+.dot {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.character_frame {
+    width: 85%;
+    height: 250px;
+    background-color: white;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    align-self: flex-start; /* Align the character div to the top */
+    margin: 0 auto 8px auto; /* Center the div horizontally */
+    background-color: white;
+    border: 2px solid black;
+}
+
+.character {
+    width: 98%;
+    height: 97.5%;
+    background-image: url('img/bg_new.webp'); /* Optional background image */
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0px auto; /* Center the div horizontally */
+    background-color: white;
+    border: 2px solid black;
+}
+
+.sprite {
+    width: 75%;
+    height: 75%;
+}
+
+
+.description_row{
+    display: flex;
+    justify-content: space-between; /* Space between left and right groups */
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.desc{
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center; /* Vertically center hp and dot */
+}
+
+.number {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center; /* Vertically center hp and dot */
+}
+
+.attribute_box {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    margin-bottom: 8px;
+    width: 90%;
+    padding: 10px; /* Adds space inside the rectangle */
+    border: 2px solid black; /* Adds a 2px black border */
+    border-radius: 10px; /* Makes the corners rounded */
+    background-color: white; /* Optional: adds a white background */
+    margin: 0 auto 8px auto; /* Center the div horizontally */
+}
+
+.journalEntry {
+    width: 100%; /* Take up the full width of the attribute_box */
+    text-align: center; /* Center text if desired */
+    font-size: 0.9rem;
+    display: flex;
+}
+
+.size {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 10px; /* Adjust the spacing between height and weight */
+}
+
+.height, .weight {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0; /* Remove margins */
+}
+
+.horizontal-line {
+    height: 1px; /* Thickness of the line */
+    background-color: black; /* Color of the line */
+    width: 95%; /* Full width of the container */
+    margin: 5px 0; /* Optional: space above and below the line */
+}
+
+.attackrow {
+    display: flex;
+    justify-content: space-between; /* Align items to both ends */
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.attack_energy_normal {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.attack_energy_other {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.attack_left {
+    display: flex;
+    align-items: center; /* Vertically center name and level */
+}
+
+.attack_name {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.attack_desc {
+    font-size: 0.6rem;
+}
+
+.attack_dmg {
+    display: flex;
+    align-items: center; /* Vertically center hp and dot */
+}
+
+.advantage_weakness{
+    display: flex;
+    justify-content: space-between; /* Space between left and right groups */
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+    background-color: red;
+}
+
+.advantage_weakness_energy_other {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    padding-top: 4px;
+    /* margin-right: 150px; */
+}
+
+.advantage_text{
+    display: flex;
+    align-items: center; /* Vertically center name and level */
+}
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Centered Card</title>
+</head>
+<body>
+
+    <div class="input-section">
+        <div class="input-header">Enter your own data</br></br></div>
+        <div class="input-field">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter name">
+        </div>
+        <div class="input-field">
+            <label for="lvlInput">Level:</label>
+            <input type="text" id="lvlInput" placeholder="Enter level">
+        </div>
+        <div class="input-field">
+            <label for="hpInput">HP:</label>
+            <input type="text" id="hpInput" placeholder="Enter HP">
+        </div>
+        <div class="input-field">
+            <label for="imgUrlInput">Character/Sprite:</label>
+            <input type="text" id="imgUrlInput" placeholder="Enter character/sprite URL">
+        </div>
+        <div class="input-field">
+            <label for="descInput">Description:</label>
+            <input type="text" id="descInput" placeholder="Enter description">
+        </div>
+        <div class="input-field">
+            <label for="noInput">Number:</label>
+            <input type="text" id="noInput" placeholder="Enter number">
+        </div>
+        <div class="input-field">
+            <label for="heightInput">Height:</label>
+            <input type="text" id="heightInput" placeholder="Enter height">
+        </div>
+        <div class="input-field">
+            <label for="weightInput">Weight:</label>
+            <input type="text" id="weightInput" placeholder="Enter weight">
+        </div>
+        <div class="input-field">
+            <label for="journalInput">Journal Entry:</label>
+            <input type="text" id="journalInput" placeholder="Enter journal info">
+        </div>
+        <div class="input-field">
+            <label for="attack1Input">Attack1 Name:</label>
+            <input type="text" id="attack1Input" placeholder="Enter attack1 name">
+        </div>
+        <div class="input-field">
+            <label for="attack1descInput">Attack1 Desc:</label>
+            <input type="text" id="attack1descInput" placeholder="Enter attack1 description">
+        </div>
+        <div class="input-field">
+            <label for="attack1dmgInput">Attack1 Damage:</label>
+            <input type="text" id="attack1dmgInput" placeholder="Enter attack1 damage">
+        </div>
+        <div class="input-field">
+            <label for="attack2Input">Attack2 Name:</label>
+            <input type="text" id="attack2Input" placeholder="Enter attack2 name">
+        </div>
+        <div class="input-field">
+            <label for="attack2descInput">Attack2 Desc:</label>
+            <input type="text" id="attack2descInput" placeholder="Enter attack2 description">
+        </div>
+        <div class="input-field">
+            <label for="attack2dmgInput">Attack2 Damage:</label>
+            <input type="text" id="attack2dmgInput" placeholder="Enter attack2 damage">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="info">
+            <div class="left-info">
+                <div class="name" id="nameDisplay">カードコレクター</div>
+                <div class="level" id="lvlDisplay">Lv.20</div>
+            </div>
+            <div class="right-info">
+                <div class="hp" id="hpDisplay">HP 70</div>
+                <div class="type"><span class="dot">草</span></div>
+            </div>
+        </div>
+        
+        <div class="character_frame">
+            <div class="character">
+                <img src="img/character.webp" style="max-width: 60%; max-height: 100%;">
+            </div>
+        </div>
+        
+        <div class="description_row">
+            <div class="desc" id="descDisplay">ちょっとオタクっぽい</div>
+            <div class="number" id="noDisplay">No.123</div>
+        </div>
+
+        <div class="attribute_box">
+            <div class="size">
+                <div class="height" id="heightDisplay">高さ2.3m</div>
+                <div class="weight" id="weightDisplay">重さ86.0kg</div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="journalEntry" id="journalDisplay">必要のない物を買うのが好きです。コンピューターが得意なこともあります。いい人です。</div>
+        </div>
+
+        <div class="attackrow">
+            <div class="attack_left">
+                <div class="type"><span class="attack_energy_other">草</span></div>
+                <div class="attack_text">
+                    <div class="attack_name" id="attack1Display">
+                        キーボードで入力
+                    </div>
+                    <div class="attack_desc" id="attack1descDisplay">
+                        メカニカルキーボードで入力すると、非常に大きな音がするため、近くにいる人に迷惑をかけることがあります。
+                    </div>
+                </div>
+            </div>
+            <div class="attack_dmg" id="attack1dmgDisplay"></div>
+        </div>
+        <div class="attackrow">
+            <div class="attack_left">
+                <div class="type"><span class="attack_energy_normal"></span></div>
+                <div class="type"><span class="attack_energy_normal"></span></div>
+                <div class="type"><span class="attack_energy_normal"></span></div>
+                <div class="attack_text">
+                    <div class="attack_name" id="attack2Display">
+                        転倒する
+                    </div>
+                    <div class="attack_desc" id="attack2descDisplay"></div>
+                </div>
+            </div>
+            <div class="attack_dmg" id="attack2dmgDisplay">
+                10
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
