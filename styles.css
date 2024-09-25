@@ -283,3 +283,34 @@ body {
 }
 
 
+@media (max-width: 600px) {
+    /* Stack input-section on top of the card */
+    body {
+        flex-direction: column; /* Stack the elements vertically */
+        padding: 0; /* Remove any excess padding */
+        height: 1500px;
+    }
+
+    /* Adjust the input section to take full width */
+    .input-section {
+        width: 100%; /* Full width on mobile */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 50px; /* Add some space below */
+    }
+
+    /* Adjust card to take full width */
+    .card {
+        width: 100%; /* Full width on mobile */
+    }
+
+    /* Optional: Adjust font sizes for better readability on small screens */
+    .name, .level, .hp {
+        font-size: 1rem; /* Smaller font size for smaller screens */
+    }
+
+    /* Optional: Adjust other elements as needed */
+    .character_frame {
+        width: 100%; /* Full width for the image */
+        height: auto; /* Allow it to scale proportionally */
+    }
+}
