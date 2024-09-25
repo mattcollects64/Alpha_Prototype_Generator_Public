@@ -298,9 +298,10 @@ body {
         margin-bottom: 50px; /* Add some space below */
     }
 
-    /* Adjust card to take full width */
-    .card {
-        width: 100%; /* Full width on mobile */
+   /* Adjust card to take full width */
+   .card {
+    width: 90%; /* Full width on mobile */
+    height: 660px;
     }
 
     /* Optional: Adjust font sizes for better readability on small screens */
@@ -310,7 +311,6 @@ body {
 
     /* Optional: Adjust other elements as needed */
     .character_frame {
-        width: 100%; /* Full width for the image */
-        height: auto; /* Allow it to scale proportionally */
+        height: 230px; /* Allow it to scale proportionally */
     }
 }
