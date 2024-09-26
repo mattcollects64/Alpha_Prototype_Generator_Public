@@ -357,7 +357,7 @@ body {
    /* Adjust card to take full width */
    .card {
     width: 90%; /* Full width on mobile */
-    height: 660px;
+    height: 680px;
     }
 
     /* Optional: Adjust font sizes for better readability on small screens */
