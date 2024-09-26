@@ -22,7 +22,7 @@ body {
     padding: 16px;
     margin-bottom: 20px;
     text-align: right;
-    margin-right: 50px;
+    margin-left: 100px;
 }
 
 .input-header{
@@ -36,12 +36,33 @@ body {
     margin-right: 8px;
 }
 
+.input-field {
+    margin-bottom: 10px; /* Adjust the value for more or less spacing */
+}
+
 .input-field input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
     width: 60%;
+}
+
+.input-section .checkboxes {
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    gap: 10px; /* Adjust gap between checkboxes */
+}
+
+.input-section .checkboxes div {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    font-size: small;
+}
+
+/* Optional: Adjust the width of the checkboxes if necessary */
+.input-section .checkboxes input[type="checkbox"] {
+    margin-right: 5px; /* Adjust spacing between checkbox and label */
 }
 
 .card {
@@ -246,7 +267,7 @@ body {
 }
 
 .attack_desc {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
 }
 
 .attack_dmg {
@@ -254,32 +275,67 @@ body {
     align-items: center; /* Vertically center hp and dot */
 }
 
-.advantage_weakness{
+.advantage_section{
     display: flex;
-    justify-content: space-between; /* Space between left and right groups */
+    justify-content: space-between; /* Align items to both ends */
     align-items: center;
     margin-bottom: 8px;
     margin-left: 15px;
     margin-right: 15px;
-    width: 100%;
-    background-color: red;
 }
 
-.advantage_weakness_energy_other {
-    height: 35px;
-    width: 35px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    border: 2px solid black;
-    display: inline-block;
-    text-align: center;
-    padding-top: 4px;
-    /* margin-right: 150px; */
+.advantage_left{
+    display: flex;
+    align-items: center; /* Vertically center name and level */
 }
 
 .advantage_text{
     display: flex;
     align-items: center; /* Vertically center name and level */
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    text-align: right;
+}
+.weakness_text{
+    display: flex;
+    align-items: center; /* Vertically center name and level */
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+}
+
+.advantage_right{
+    text-align: right;
+}
+.weakness_right{
+    text-align: right;
+}
+
+
+/* Energies */
+.advantage_energy_normal {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 0.9rem;
+    margin-right: 4px;
+}
+
+.advantage_energy_others {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 0.9rem;
+    margin-right: 4px;
 }
 
 
@@ -288,14 +344,14 @@ body {
     body {
         flex-direction: column; /* Stack the elements vertically */
         padding: 0; /* Remove any excess padding */
-        height: 1500px;
+        height: 1900px;
     }
 
     /* Adjust the input section to take full width */
     .input-section {
         width: 100%; /* Full width on mobile */
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 50px; /* Add some space below */
+        margin-left: 0; /* Remove right margin */
+        margin-top: 50px; /* Add some space below */
     }
 
    /* Adjust card to take full width */
