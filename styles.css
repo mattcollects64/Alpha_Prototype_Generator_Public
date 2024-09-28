@@ -373,14 +373,14 @@ footer {
     body {
         flex-direction: column; /* Stack the elements vertically */
         padding: 0; /* Remove any excess padding */
-        height:2000px;
+        height:1950px;
     }
 
     /* Adjust the input section to take full width */
     .input-section-card {
         width: 100%; /* Full width on mobile */
         margin-left: 0; /* Remove right margin */
-        margin-top: 50px; /* Add some space below */
+        margin-top: 40px; /* Add some space below */
         flex-direction: column;
     }
 
@@ -401,7 +401,8 @@ footer {
    /* Adjust card to take full width */
    .card {
     width: 100%;
-
+    min-height: 7.2in;
+    margin-top:20px;
     }
 
     /* Optional: Adjust font sizes for better readability on small screens */
@@ -411,6 +412,6 @@ footer {
 
     /* Optional: Adjust other elements as needed */
     .character_frame {
-        min-height: 240px;
+        height: 230px;
     }
 }
