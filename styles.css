@@ -418,4 +418,10 @@ footer {
     .input-section .checkboxes input[type="checkbox"] {
         margin-right: 0px; /* Adjust spacing between checkbox and label */
     }
+
+    .input-section .checkboxes {
+        display: flex; /* Use flexbox for side-by-side layout */
+        flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+        gap: 20px; /* Adjust gap between checkboxes */
+    }
 }
