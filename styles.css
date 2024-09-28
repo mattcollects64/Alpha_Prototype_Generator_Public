@@ -414,4 +414,8 @@ footer {
     .character_frame {
         height: 230px;
     }
+
+    .input-section .checkboxes input[type="checkbox"] {
+        margin-right: 0px; /* Adjust spacing between checkbox and label */
+    }
 }
