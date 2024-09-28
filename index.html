@@ -8,7 +8,6 @@
     <title>Alpha Prototype Generator</title>
 </head>
 <body>
-
 <!-- The Card -->
     <div class="card">
         <div class="info">
@@ -99,183 +98,192 @@
 
 
 <!-- Normal Inputs -->
-<div class="input-section">
-    <div class="input-header">Enter your own data</br></br></div>
-    <div class="input-field">
-        <label for="nameInput">Name:</label>
-        <input type="text" id="nameInput" placeholder="Enter name">
+<div class="input-section-card">
+    <div class="input-header">Create Your Own Alpha Prototype</div>
+    <div class="input-body">Enter data in the fields below to update the card. All updates happen live.</br> Tip: Use a character image around 500PX or larger for the best fit.</div>
+    <div class="input-section-main">
+        <div class="input-section"> <!-- Breaking up this box in two -->
+            <div class="input-field">
+                <label for="nameInput">Name:</label>
+                <input type="text" id="nameInput" placeholder="Enter name">
+            </div>
+            <div class="input-field">
+                <label for="lvlInput">Level:</label>
+                <input type="text" id="lvlInput" placeholder="Enter level">
+            </div>
+            <div class="input-field">
+                <label for="hpInput">HP:</label>
+                <input type="text" id="hpInput" placeholder="Enter HP">
+            </div>
+            <div class="input-field">
+                <label for="imgUrlInput">Character:</label>
+                <input type="text" id="imgUrlInput" placeholder="Enter character/sprite URL">
+            </div>
+            <div class="input-field">
+                <label for="descInput">Description:</label>
+                <input type="text" id="descInput" placeholder="Enter description">
+            </div>
+            <div class="input-field">
+                <label for="noInput">Number:</label>
+                <input type="text" id="noInput" placeholder="Enter number">
+            </div>
+            <div class="input-field">
+                <label for="heightInput">Height:</label>
+                <input type="text" id="heightInput" placeholder="Enter height">
+            </div>
+            <div class="input-field">
+                <label for="weightInput">Weight:</label>
+                <input type="text" id="weightInput" placeholder="Enter weight">
+            </div>
+            <div class="input-field">
+                <label for="journalInput">Journal Entry:</label>
+                <input type="text" id="journalInput" placeholder="Enter journal info">
+            </div>
+        </div>
+        <div class="input-section"> <!-- Breaking up this box in two -->
+            <div class="input-field">
+                <label for="attack1Input">Attack1 Name:</label>
+                <input type="text" id="attack1Input" placeholder="Enter attack1 name">
+            </div>
+            <div class="input-field">
+                <label for="attack1descInput">Attack1 Desc:</label>
+                <input type="text" id="attack1descInput" placeholder="Enter attack1 description">
+            </div>
+            <div class="input-field">
+                <label for="attack1dmgInput">Attack1 Dmg:</label>
+                <input type="text" id="attack1dmgInput" placeholder="Enter attack1 damage">
+            </div>
+            <div class="input-field">
+                <label for="attack2Input">Attack2 Name:</label>
+                <input type="text" id="attack2Input" placeholder="Enter attack2 name">
+            </div>
+            <div class="input-field">
+                <label for="attack2descInput">Attack2 Desc:</label>
+                <input type="text" id="attack2descInput" placeholder="Enter attack2 description">
+            </div>
+            <div class="input-field">
+                <label for="attack2dmgInput">Attack2 Dmg:</label>
+                <input type="text" id="attack2dmgInput" placeholder="Enter attack2 damage">
+            </div>
+            </br>
+        <!-- Advantage Inputs-->
+            <div class="input-field checkboxes">
+                <label>Advantage Types:</label>
+                <div>
+                    <input type="checkbox" id="advantageTypeGrass" name="advantageType" value="Grass">
+                    <label for="advantageTypeGrass">Grass</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeBug" name="advantageType" value="Bug">
+                    <label for="advantageTypeBug">Bug</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeWater" name="advantageType" value="Water">
+                    <label for="advantageTypeWater">Water</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeFire" name="advantageType" value="Fire">
+                    <label for="advantageTypeFire">Fire</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeElectric" name="advantageType" value="Electric">
+                    <label for="advantageTypeElectric">Electric</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeGhost" name="advantageType" value="Ghost">
+                    <label for="advantageTypeGhost">Ghost</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeFlying" name="advantageType" value="Flying">
+                    <label for="advantageTypeFlying">Flying</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeGround" name="advantageType" value="Ground">
+                    <label for="advantageTypeGround">Ground</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeFighting" name="advantageType" value="Fighting">
+                    <label for="advantageTypeFighting">Fighting</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypePsychic" name="advantageType" value="Psychic">
+                    <label for="advantageTypePsychic">Psychic</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypePoison" name="advantageType" value="Poison">
+                    <label for="advantageTypePoison">Poison</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeDragon" name="advantageType" value="Dragon">
+                    <label for="advantageTypeDragon">Dragon</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="advantageTypeNormal" name="advantageType" value="Normal">
+                    <label for="advantageTypeNormal">Normal</label>
+                </div>
+            </div>
+        </br>
+        <!-- Weakness Inputs-->
+            <div class="input-field checkboxes">
+                <label>Weakness Types:</label>
+                <div>
+                    <input type="checkbox" id="weaknessTypeGrass" name="weaknessType" value="Grass">
+                    <label for="weaknessTypeGrass">Grass</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeBug" name="weaknessType" value="Bug">
+                    <label for="weaknessTypeBug">Bug</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeWater" name="weaknessType" value="Water">
+                    <label for="weaknessTypeWater">Water</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeFire" name="weaknessType" value="Fire">
+                    <label for="weaknessTypeFire">Fire</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeElectric" name="weaknessType" value="Electric">
+                    <label for="weaknessTypeElectric">Electric</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeGhost" name="weaknessType" value="Ghost">
+                    <label for="weaknessTypeGhost">Ghost</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeFlying" name="weaknessType" value="Flying">
+                    <label for="weaknessTypeFlying">Flying</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeGround" name="weaknessType" value="Ground">
+                    <label for="weaknessTypeGround">Ground</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeFighting" name="weaknessType" value="Fighting">
+                    <label for="weaknessTypeFighting">Fighting</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypePsychic" name="weaknessType" value="Psychic">
+                    <label for="weaknessTypePsychic">Psychic</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypePoison" name="weaknessType" value="Poison">
+                    <label for="weaknessTypePoison">Poison</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeDragon" name="weaknessType" value="Dragon">
+                    <label for="weaknessTypeDragon">Dragon</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weaknessTypeNormal" name="weaknessType" value="Normal">
+                    <label for="weaknessTypeNormal">Normal</label>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="input-field">
-        <label for="lvlInput">Level:</label>
-        <input type="text" id="lvlInput" placeholder="Enter level">
-    </div>
-    <div class="input-field">
-        <label for="hpInput">HP:</label>
-        <input type="text" id="hpInput" placeholder="Enter HP">
-    </div>
-    <div class="input-field">
-        <label for="imgUrlInput">Character/Sprite:</label>
-        <input type="text" id="imgUrlInput" placeholder="Enter character/sprite URL">
-    </div>
-    <div class="input-field">
-        <label for="descInput">Description:</label>
-        <input type="text" id="descInput" placeholder="Enter description">
-    </div>
-    <div class="input-field">
-        <label for="noInput">Number:</label>
-        <input type="text" id="noInput" placeholder="Enter number">
-    </div>
-    <div class="input-field">
-        <label for="heightInput">Height:</label>
-        <input type="text" id="heightInput" placeholder="Enter height">
-    </div>
-    <div class="input-field">
-        <label for="weightInput">Weight:</label>
-        <input type="text" id="weightInput" placeholder="Enter weight">
-    </div>
-    <div class="input-field">
-        <label for="journalInput">Journal Entry:</label>
-        <input type="text" id="journalInput" placeholder="Enter journal info">
-    </div>
-    <div class="input-field">
-        <label for="attack1Input">Attack1 Name:</label>
-        <input type="text" id="attack1Input" placeholder="Enter attack1 name">
-    </div>
-    <div class="input-field">
-        <label for="attack1descInput">Attack1 Desc:</label>
-        <input type="text" id="attack1descInput" placeholder="Enter attack1 description">
-    </div>
-    <div class="input-field">
-        <label for="attack1dmgInput">Attack1 Damage:</label>
-        <input type="text" id="attack1dmgInput" placeholder="Enter attack1 damage">
-    </div>
-    <div class="input-field">
-        <label for="attack2Input">Attack2 Name:</label>
-        <input type="text" id="attack2Input" placeholder="Enter attack2 name">
-    </div>
-    <div class="input-field">
-        <label for="attack2descInput">Attack2 Desc:</label>
-        <input type="text" id="attack2descInput" placeholder="Enter attack2 description">
-    </div>
-    <div class="input-field">
-        <label for="attack2dmgInput">Attack2 Damage:</label>
-        <input type="text" id="attack2dmgInput" placeholder="Enter attack2 damage">
-    </div>
-</br>
-<!-- Advantage Inputs-->
-    <div class="input-field checkboxes">
-        <label>Advantage Types:</label>
-        <div>
-            <input type="checkbox" id="advantageTypeGrass" name="advantageType" value="Grass">
-            <label for="advantageTypeGrass">Grass</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeBug" name="advantageType" value="Bug">
-            <label for="advantageTypeBug">Bug</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeWater" name="advantageType" value="Water">
-            <label for="advantageTypeWater">Water</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeFire" name="advantageType" value="Fire">
-            <label for="advantageTypeFire">Fire</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeElectric" name="advantageType" value="Electric">
-            <label for="advantageTypeElectric">Electric</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeGhost" name="advantageType" value="Ghost">
-            <label for="advantageTypeGhost">Ghost</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeFlying" name="advantageType" value="Flying">
-            <label for="advantageTypeFlying">Flying</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeGround" name="advantageType" value="Ground">
-            <label for="advantageTypeGround">Ground</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeFighting" name="advantageType" value="Fighting">
-            <label for="advantageTypeFighting">Fighting</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypePsychic" name="advantageType" value="Psychic">
-            <label for="advantageTypePsychic">Psychic</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypePoison" name="advantageType" value="Poison">
-            <label for="advantageTypePoison">Poison</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeDragon" name="advantageType" value="Dragon">
-            <label for="advantageTypeDragon">Dragon</label>
-        </div>
-        <div>
-            <input type="checkbox" id="advantageTypeNormal" name="advantageType" value="Normal">
-            <label for="advantageTypeNormal">Normal</label>
-        </div>
-    </div>
-</br>
-<!-- Weakness Inputs-->
-    <div class="input-field checkboxes">
-        <label>Weakness Types:</label>
-        <div>
-            <input type="checkbox" id="weaknessTypeGrass" name="weaknessType" value="Grass">
-            <label for="weaknessTypeGrass">Grass</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeBug" name="weaknessType" value="Bug">
-            <label for="weaknessTypeBug">Bug</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeWater" name="weaknessType" value="Water">
-            <label for="weaknessTypeWater">Water</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeFire" name="weaknessType" value="Fire">
-            <label for="weaknessTypeFire">Fire</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeElectric" name="weaknessType" value="Electric">
-            <label for="weaknessTypeElectric">Electric</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeGhost" name="weaknessType" value="Ghost">
-            <label for="weaknessTypeGhost">Ghost</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeFlying" name="weaknessType" value="Flying">
-            <label for="weaknessTypeFlying">Flying</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeGround" name="weaknessType" value="Ground">
-            <label for="weaknessTypeGround">Ground</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeFighting" name="weaknessType" value="Fighting">
-            <label for="weaknessTypeFighting">Fighting</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypePsychic" name="weaknessType" value="Psychic">
-            <label for="weaknessTypePsychic">Psychic</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypePoison" name="weaknessType" value="Poison">
-            <label for="weaknessTypePoison">Poison</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeDragon" name="weaknessType" value="Dragon">
-            <label for="weaknessTypeDragon">Dragon</label>
-        </div>
-        <div>
-            <input type="checkbox" id="weaknessTypeNormal" name="weaknessType" value="Normal">
-            <label for="weaknessTypeNormal">Normal</label>
-        </div>
-    </div>        
-</div>
-
+    <div class="input-body">
+        Follow me <a href="https://www.instagram.com/mattcollects64/" target="_blank">@MattCollects64</a></br></br>
+    </div>    
+</div>  
 </body>
 </html>
