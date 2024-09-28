@@ -373,7 +373,7 @@ footer {
     body {
         flex-direction: column; /* Stack the elements vertically */
         padding: 0; /* Remove any excess padding */
-        height:2050px;
+        height:2150px;
     }
 
     /* Adjust the input section to take full width */
