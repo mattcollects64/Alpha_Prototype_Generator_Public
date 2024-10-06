@@ -174,16 +174,21 @@ footer {
 .character {
     width: 98%;
     height: 97.5%;
-    background-image: url('img/bg_new.webp'); /* Optional background image */
     background-size:auto;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-image: url('img/bg_new.webp'); /* Optional background image */
+    /* background-repeat: no-repeat; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 0px auto; /* Center the div horizontally */
-    background-color: white;
     border: 2px solid black;
+        /* New background pattern logic */
+        background-color: rgb(255, 255, 255);
+        background-image: radial-gradient(rgba(0, 0, 0, 0.8) 1px, transparent 1px), 
+                          radial-gradient(rgba(0, 0, 0, 0.8) 1px, transparent 1.8px);
+        background-size: 8px 8px;
+        background-position: 0 0, 4px 4px; /* Offset the second gradient */
 }
 
 .sprite {
@@ -222,8 +227,14 @@ footer {
     padding: 10px; /* Adds space inside the rectangle */
     border: 2px solid black; /* Adds a 2px black border */
     border-radius: 10px; /* Makes the corners rounded */
-    background-color: white; /* Optional: adds a white background */
     margin: 0 auto 8px auto; /* Center the div horizontally */
+
+    /* New background pattern logic */
+    background-color: rgb(255, 255, 255);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.4) 1px, transparent 1px);
+    background-size: 5px 5px;
+    background-position: 0 0, 3.0px 9px; /* Offset the second gradient */
+    
 }
 
 .journalEntry {
