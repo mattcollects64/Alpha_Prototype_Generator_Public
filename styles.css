@@ -185,10 +185,10 @@ footer {
     border: 2px solid black;
         /* New background pattern logic */
         background-color: rgb(255, 255, 255);
-        background-image: radial-gradient(rgba(0, 0, 0, 0.8) 1px, transparent 1px), 
-                          radial-gradient(rgba(0, 0, 0, 0.8) 1px, transparent 1.8px);
-        background-size: 8px 8px;
-        background-position: 0 0, 4px 4px; /* Offset the second gradient */
+        background-image: radial-gradient(rgba(0, 0, 0, 0.8) 0.6px, transparent 0.8px), 
+                          radial-gradient(rgba(0, 0, 0, 0.5) 0.6px, transparent 1px);
+        background-size: 6px 6px;
+        background-position: 0 0, 3px 3px; /* Offset the second gradient */
 }
 
 .sprite {
@@ -233,7 +233,7 @@ footer {
     background-color: rgb(255, 255, 255);
     background-image: radial-gradient(rgba(0, 0, 0, 0.4) 1px, transparent 1px);
     background-size: 5px 5px;
-    background-position: 0 0, 3.0px 9px; /* Offset the second gradient */
+    background-position: 0 0, 3.0px 9px;
     
 }
 
